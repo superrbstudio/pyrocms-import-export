@@ -297,13 +297,13 @@ class Admin extends Admin_Controller
         $this->wp_import->posts($xml);
         
         // Import Comments
-        $this->wp_import->comments($xml);
+        //$this->wp_import->comments($xml);
         
         // Import Users
-        $this->wp_import->users($xml); // Currently only imports users who aren't already in the system
+        //$this->wp_import->users($xml); // Currently only imports users who aren't already in the system
 
         // Import Pages
-        $this->wp_import->pages($xml);
+        //$this->wp_import->pages($xml);
         $this->session->set_flashdata('success', lang('ie:import_wp_success'));
 
         redirect('admin/import_export');
